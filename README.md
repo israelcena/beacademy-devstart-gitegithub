@@ -104,5 +104,4 @@ git Revert <hash code>
 - Exclussão de um commit:
 ```git
 git Reset
-
 ```
