@@ -3,67 +3,106 @@
 ## Principais comandos de Git e Github Aprendidos
 
 ### Configurações iniciais
-- Registra o nome do autor do projeto
+
+- Registra o nome do autor do projeto:
 ```git
 git config –-global user.name <nome>
 ```
 
-- git config --global user.email <email>
-Registra o e-mail do autor do projeto
+- Registra o e-mail do autor do projeto:
+```git
+git config --global user.email <email>
+```
 
-### Início de um projeto
+### Comandos em um projeto
 
-- git init <nome do repositório>
-Cria um novo .git
+- Cria um novo .git:
+```git
+git init <nome do repositório>
+```
 
-- git Add <nome do arquivo>
-Adiciona o arquivo oo staging.
+- Adiciona o arquivo oo staging:
+```git
+git Add <nome do arquivo>
+```
 
-- git Add .
-Adiciona todos da pasta atual ao staging
+- Adiciona todos da pasta atual ao staging:
+```git
+git Add .
+```
 
-- git commit -m "Novo Commit".
-Comita os arquivos.
+- Comita os arquivos:
+```git
+git commit -m "Novo Commit".
+```
 
-- git commit --amend
-Renomeia o ultimo commit feito.
+- Renomeia o ultimo commit feito:
+```git
+git commit --amend
+```
 
-- Git clone <URL do projeto>
-Clona um repositório.
+Clona um repositório:
+```git
+git clone <URL do projeto>
+```
 
-- Git Branch
-Lista as ramificações do repositorio.
+Lista as ramificações do repositorio:
+```git
+git Branch
+```
 
-- Git Checkout -b <nome da Branch>
-Cria uma nova ramificação para o arquivo principal.
+- Cria uma nova ramificação para o arquivo principal:
+```git
+git Checkout -b <nome da Branch>
+```
 
+- Apaga o Brach que não terá mais utilidade.
+```git
+git branch -d <nome da Branch>
+```
 
-- Git branch -d <nome da Branch>
-Apaga o Brach que não terá mais utilidade.
+- Muda de branch:
+```git
+git checkout <nome da Branch>
+```
 
-- Git checkout <nome da Branch>
-Muda de branch.
+- Junta duas branchs fazendo um novo commit:
+```git
+git merge
+```
 
-- Git merge
-junta duas branchs fazendo um novo commit.
+- Envia o commit para um repositório remoto:
+```git
+git push 
+```
 
-- Git push 
-envia o commit para um repositório remoto.
+- Recebe os commits de um remositório remoto:
+```git
+git pull 
+```
 
-- Git pull 
-recebe os commits de um remositório remoto.
+- Guarda arquivos semparados dos commits:
+```git
+git Stash
+```
 
-- Git Stash
-Guarda arquivos semparados dos commits
+- Lista todos os Stashs:
+```git
+Git Stash List
+```
 
-- Git Stash List
-Lista todos os Stashs
+- Restaura alterações salvas nos Stashs:
+```git
+git Stash pop
+```
 
-- Git Stash pop
-Restaura alterações salvas nos Stashs
+- Faz a reversão de um Commit:
+```git
+git Revert <hash code>
+```
 
-- Git Revert <hash code>
-Faz a reversão de um Commit.
+- Exclussão de um commit:
+```git
+git Reset
 
-- Git Reset
-Faz a exclussão de um commit.
+```
