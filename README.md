@@ -3,8 +3,10 @@
 ## Principais comandos de Git e Github Aprendidos
 
 ### Configurações iniciais
-- git config –-global user.name <nome>
-Registra o nome do autor do projeto
+- Registra o nome do autor do projeto
+```git
+git config –-global user.name <nome>
+```
 
 - git config --global user.email <email>
 Registra o e-mail do autor do projeto
